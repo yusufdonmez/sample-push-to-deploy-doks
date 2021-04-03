@@ -1,0 +1,15 @@
+- name: DigitalOcean Kubernetes
+  # You may pin to the exact commit or the version.
+  # uses: matootie/dokube@38195eb69a2b5db8a10d49d0785d6d3dd425f1c9
+  uses: matootie/dokube@v1.3.4
+  with:
+    # DigitalOcean Personal Access Token; Used to fetch latest Kubernetes Config.
+    personalAccessToken: 8b5af4562e9a438314ce1ca9f0e8bc2fe4972f64e1046c5e3b4549faad661453
+    # The name of the DigitalOcean Kubernetes cluster that you plan to work with.
+    clusterName: k8s-yusuf-test
+    # How long the kubeconfig should stay valid for.
+    expirationTime: 600 # optional, default is 600
+    # The Kubernetes namespace to operate under.
+    namespace: # optional, default is default
+    # The kubectl version to use.
+    version: # optional, default is 1.16.0
